@@ -59,7 +59,7 @@ app.put('/api/courses/:id', (req,res) =>{
         return;
     }
 
-    course.name=req.name;
+    course.name=req.body.name;
     res.send(course);
 
 
